@@ -1,0 +1,36 @@
+﻿VIM
+
+vi编辑器:
+
+  打开某个文件
+	vim test.txt
+	
+	查看更新日志文件
+	tailf /var/log/goku/fault/fault.log 
+
+	确认编辑
+	i
+	
+	退出编辑
+	esc
+		
+	不是root用户保存
+	:wq!
+	
+	保存退出	 
+	:wq 
+
+	不保存退出
+	:q
+	
+	返回
+	u
+	
+   滚动到最后一页
+   shift+G
+
+	搜索向后查找 n 下一个
+	/+字符串
+	
+	搜索向前查找
+	?+字符串
