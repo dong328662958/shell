@@ -1,10 +1,10 @@
 
 PATH			
-	²é¿´PATH	
+	æŸ¥çœ‹PATH	
 	echo $PATH	
 
-	Ìí¼ÓÂ·¾¶µ½PATH
-	PATH=¡±$PATH¡±:/root
+	æ·»åŠ è·¯å¾„åˆ°PATH
+	PATH=â€$PATHâ€:/root
 
 
 
