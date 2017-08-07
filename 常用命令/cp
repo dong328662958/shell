@@ -1,0 +1,50 @@
+
+cp 
+	拷贝,复制
+	
+	拷贝文件为test2,同一目录
+	cp test1 test2
+	
+	复制文件并重命名
+   	cp file.text copy_file.text
+	
+	复制文件夹下所有文件到指定目录
+	cp -rp ~/.bashrc /tmp/bashrc
+
+	复制etcd文件夹下所有文件到指定目录
+	cp etcd* /usr/local/bin/
+	
+	拷贝目录
+	cp -r est1 test2
+	
+	拷贝软连接.  软连接相当于快捷方式,硬连接拷贝文件
+	cp -d test1 test2	
+		建立软连接
+		ln -s test test1
+		
+	是否覆盖已有的文件
+	cp -i
+
+scp 远程拷贝	
+	
+	拷贝config文件夹到 192.168.1.3:下
+	scp -r config 192.168.1.3:~/
+
+rm
+	删除某个文件夹和文件
+    rm -rf IPconfig	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

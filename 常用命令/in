@@ -1,0 +1,19 @@
+
+软连接 类似于桌面快捷方式
+ln -s source_path target_path
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

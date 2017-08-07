@@ -1,0 +1,26 @@
+
+hostname
+
+	查看主机名
+	hostname
+	
+	临时修改主机名
+	hostname aaa
+	
+	修改主机名
+	vi /etc/sysconfig/network
+		hostname值
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+
+在profile文件中设置相关环境变量
+# vi /etc/profile
+
+	# 分别指定http、https、ftp协议使用的代理服务器地址
+　　http_proxy=http://192.168.20.20:3128
+　　https_proxy=http://192.168.20.20:3128
+　　ftp_proxy=http://192.168.20.20:3128
+
+	# 访问局域网地址(192.168.20.0/24网段)时不使用代理，可以用逗号分隔多个地址
+　　no_proxy=192.168.20. 
+　　export http_proxy https_proxy ftp_proxy no_proxy
+
+　　保存退出，注销重新登陆系统即可生效。
+
+
+
+
+
+
+
+
+
+
+
+
+

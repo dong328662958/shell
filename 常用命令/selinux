@@ -1,0 +1,27 @@
+
+selinux
+
+	关闭linux的防火墙
+	把’SELINUX=enforcing’改成’SELINUX=disabled’，然后重启机器
+	vim/etc/selinux/config
+		
+	临时关闭selinux
+	setenforce 0
+		
+	临时开启selinux
+	setenforce 1
+	
+	获取selinux状态
+	getenforce
+
+
+
+
+
+
+
+
+
+
+
+

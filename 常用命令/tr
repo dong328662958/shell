@@ -1,0 +1,27 @@
+
+tr
+
+
+tr
+  查找并替换文本
+
+将文件testfile中的小写字母全部转换成大写字母
+cat testfile |tr a-z A-Z
+
+空格替换为换行
+cat testfile |tr ' ' '\n'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

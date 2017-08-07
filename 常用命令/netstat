@@ -1,0 +1,28 @@
+
+netstat 
+	
+	查看当前系统启动哪些端口
+	netstat -lnp
+	
+	查看网络连接状况
+	netstat -an
+	
+	网络的联机状态
+	netstat -a 
+	
+	查看80端口连接状况
+	netstat -an |grep 80
+
+
+
+
+
+
+
+
+
+
+
+
+
+

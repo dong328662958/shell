@@ -1,0 +1,30 @@
+
+解压
+rpm -ivh tcpdump-xxx.x86_64.rpm
+
+
+rpm
+	查看是否已经安装某个包
+	rpm -q bind
+
+	查询带bind的包名
+	rpm -qa |grep bind
+
+	安装某个包
+	rpm -hvi dejagnu-1.4.2-10.noarch.rpm
+
+	可以显示系统版本
+	uname -a
+
+
+
+
+
+
+
+
+
+
+
+
+

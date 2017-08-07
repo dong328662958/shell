@@ -1,0 +1,102 @@
+
+
+
+sed
+	文本处理命令,实现更新插入删除等写操作。
+	sed
+	
+	-e  处理输入的文本文件。
+	
+	-f  处理输入的文本文件
+	
+	-n  仅显示script处理后的结果。
+	
+	-h  显示帮助。
+	
+	-V  显示版本信息。
+	
+	a ：新增， a 的后面可以接字串
+	
+	c ：取代， c 的后面可以接字串，这些字串可以取代 n1,n2 之间的行
+	
+	d ：删除
+	
+	i ：插入， i 的后面可以接字串
+	
+	p ：列印，亦即将某个选择的数据印出。通常 p 会与参数 sed -n 一起运行
+	
+	s ：取代，可以直接进行取代的工作哩！通常这个 s 的动作可以搭配正规表示法！例如 1,20s/old/new/g 
+	
+	新增
+	
+		在testfile文件的第四行后添加一行
+		sed -e 4a\newLine1 testfile 
+	
+	删除
+		删除第2行和第5行
+		sed -e '1,2d' testfile
+		
+		删除第 3 到最后一行
+		sed -e '3,$d' testfile
+		
+		删除包含test的行
+		sed  '/test/d' testfile
+	
+	添加
+	
+		第二行后添加字符串
+		sed '2a add something' testfile
+		
+		第二行前添加字符串
+		sed '2i before' testfile
+		
+		一次添加二行
+		sed '2a one \n two' testfile
+	
+	多点编辑
+		
+		执行第一个-e后执行第二个-e
+		sed -e '2a add before' -e '4a add after' testfile
+
+	替换
+	
+		将第2-3行的内容取代成为 replace
+		sed -e '2,3c replace' testfile
+		
+		搜索并替换 test替换为newtest
+		sed -e 's/test/newtest/g' testfile
+		
+		正则 test替换为666
+		sed 's/^.*test/666/g' testfile
+		
+		
+	
+	行号
+		
+		列出第1.2行
+		sed -n '1,2p' testfile	
+		
+		搜索含有test字符串的行
+		sed -n '/test/p' testfile
+	
+	直接修改文件内容
+	
+		文件内每一行结尾若为 test 则换成 replace
+		sed -i 's/test/replace/g' testfile
+		
+		最后一行加入add something. 
+		sed -i '$a add something' testfile
+
+
+
+
+
+
+
+
+
+
+
+
+
+

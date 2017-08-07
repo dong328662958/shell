@@ -1,0 +1,21 @@
+
+查看系统进程
+ps aux
+
+查找指定进程对应的信息
+ps -ef|grep etcd
+ps -ef|grep k8s
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+
+ifconfig 
+
+	 查看网卡IP	
+	 ifconfig
+	 
+	 查看指定设备的IP信息
+	 ifconfig eth0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

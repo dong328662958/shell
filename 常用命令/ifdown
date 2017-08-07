@@ -1,0 +1,29 @@
+
+ifdown
+	
+	重启网卡(推荐)
+	service network restart
+	
+	重启网卡
+	ifdown eth0;ifup eth0
+		
+	停掉一个网卡
+	ifdown eth0	
+
+	启动网卡
+	ifup eth0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+
+mkdir 目录文件
+
+	当前目录
+	./
+
+	上一级目录
+	../
+	
+	创建目录
+	mkdir  xxx
+		创建多层目录
+		mkdir -p xxx/xxx/xxx
+		
+		创建2个目录
+		mkdir aa bb
+		
+	删除目录
+	rmdir xxx
+	
+	删除多层目录
+	rmdir -p xxx/xxx
+		 
+	删除文件
+    rm	xxx
+	
+		强制删除
+		rm -f xxx
+		
+		删除目录
+		rm -r
+		
+		全部删除
+		rm -rf
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

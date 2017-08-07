@@ -1,0 +1,23 @@
+
+网卡浏览抓包
+tcpdump	-nn -i eth0
+
+抓包方式1:  注意修改端口号
+tcpdump  -i any -n dst port 20162
+
+抓包方式2: 生成日志
+tcpdump udp port 10162 -s 0 -w log.cap 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

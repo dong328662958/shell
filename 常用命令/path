@@ -1,0 +1,21 @@
+
+PATH			
+	查看PATH	
+	echo $PATH	
+
+	添加路径到PATH
+	PATH=”$PATH”:/root
+
+
+
+
+
+
+
+
+
+
+
+
+
+

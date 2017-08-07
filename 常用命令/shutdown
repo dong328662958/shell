@@ -1,0 +1,46 @@
+
+shutdown 关机
+
+	把内存中的数据写到磁盘中,不管是重启系统还是关闭系统，首先要运行 sync 命令
+	sync
+	
+	关机指令
+	shutdown 
+	
+	10分钟后关机,并且会显示在登陆用户的当前屏幕中。
+	shutdown –h 10 ‘This server will shutdown after 10 mins’ 
+	
+	立马关机
+	Shutdown –h now 
+
+	系统会在今天20:25关机
+	Shutdown –h 20:25 
+
+	十分钟后关机
+	Shutdown –h +10 
+
+reboot/Shutdown
+	
+	系统立马重启
+	Shutdown –r now 
+	
+	就是重启，等同于 shutdown –r now
+	reboot 
+
+	系统十分钟后重启
+	Shutdown –r +10 
+	
+	关闭系统，等同于shutdown –h now 和 poweroff
+	halt 
+
+reboot
+
+
+
+
+
+
+
+
+
+

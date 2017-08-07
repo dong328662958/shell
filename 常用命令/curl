@@ -1,0 +1,50 @@
+
+
+curl
+	
+	网络请求
+	curl
+	
+	参数说明:
+		
+		-O			下载后本地文件名为url后缀文件名
+		-k			允许不使用证书到SSL站点
+		-i 			显示http response的头信息
+		-v          显示一次http通信的整个过程
+		--insecure 	不使用证书 
+		-X          请求方式
+		-H 			头信息,多个头信息,多个-H
+		-d 			post body data json格式
+		--data-urlencode  url编码data数据
+		
+	发送GET请求
+	curl -k -i  https://ip:port/xxx -H "Content-type: application/json" -H "Accept:application/json" -H "charset:UTF-8" -H "X-Auth-User:cloud_admin" -d "{\"userName\":\"cloud_admin\",\"password\":\"FusionSphere123\" }"
+	
+	发送POST请求
+	curl -i -k --insecure https://ip:port/xxx -X POST -H "Content-Type:application/json" -H "Accept:*/*" -H "user-agent:HttpClient" -H "X-HW-Cloud-Auth-Token:$tokenid" -d '{"language":"zh_CN","start":0}'  | python -mjson.tool
+	
+	其他请求
+		-X DELETE
+		-X PUT
+	
+	下载
+		将文件保存到本地并命名为gettext.html
+		curl -O http://ip/gettext.html
+	
+	重定向	
+		使用重定向,默认不重定向
+		curl -L http://www.google.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+

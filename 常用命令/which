@@ -1,0 +1,21 @@
+
+which	
+	
+	查找一个命令的绝对路径
+	which		
+		例子: which rm
+
+	查询命令对应的脚本路径
+    whereis rm
+
+
+
+
+
+
+
+
+
+
+
+
