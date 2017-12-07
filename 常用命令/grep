@@ -1,34 +1,40 @@
 
 grep
-	�����ļ�������������ַ���
+	查找文件里符合条件的字符串
 	grep
 	
-		����
-		-i  �����ַ���Сд��
-		-l  �г����ݷ��ϵ� 
-		-L  �г����ݲ����ϵ�
-		-v  ��ת����
-		-f  ���ļ��в���
-		-r  �ݹ鷽ʽ��ѯ
+		参数
+		-i  忽略字符大小写。
+		-l  列出内容符合的 
+		-L  列出内容不符合的
+		-v  反转查找
+		-f  在文件中查找
+		-r  递归方式查询
 		
-		����xx.txt�е�test
+		查找xx.txt中的test
 		grep test -f xx.txt
 		
-		��ǰĿ¼,���Һ�׺�С�test�����ļ�������aaa���ַ������ļ�
+		当前目录,查找后缀有“test”的文件包含“aaa”字符串的文件
 		grep aaa test* 
 		
-�鿴ϵͳcpu��Ϣ
+查看系统cpu信息
 	grep -c 'processor' /proc/cpuinfo
 
-��ѯjava�������
+查询java命令帮助
 	grep | java.*
 
-���ҹؼ���
-	grep "�ؼ���"
-	
+查找关键字
+	grep "关键字"
+
+递归搜索包含指定内容所有文件
+grep -r "haCall" /opt/goku/services/ha
+
+搜索包含内容的文件
+grep -H -r "haCall" /opt/goku/services | cut -d: -f1
+
 zgrep
 
-	������fault�ļ��²���ָ���ؼ���
+	从所有fault文件下查找指定关键字
 	zgrep "syncno=649" fault.*
 
 
