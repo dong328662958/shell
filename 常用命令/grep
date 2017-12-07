@@ -32,6 +32,9 @@ grep -r "haCall" /opt/goku/services/ha
 搜索包含内容的文件
 grep -H -r "haCall" /opt/goku/services | cut -d: -f1
 
+多条件过滤查询
+grep -E "AlarmReportTask|AlarmCheckParam"
+
 zgrep
 
 	从所有fault文件下查找指定关键字
